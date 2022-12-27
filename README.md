@@ -88,46 +88,36 @@ Para isso utiliza-se:
 
 ## Branch
 
-Até agora tudo o que fizemos de alterações e mandamos de commit, foi na nossa `main`, que é aquela linha do tempo principal.
-Agora vou mostrar pra vocês como criamos uma branch e depois como que juntamos ela com o código que já está na `main` (lembrando que ela é uma linha cronológica adicional/alternativa a principal)
-E outra, a branch pode ser criada tanto para quando você for fazer uma alteração em um arquivo, quando para adicionar outro arquivo dentro do projeto ou mesmo excluir.
-<br>
-Obs. *Lembrem que eu estou aqui editando um arquivo markdown, porém isso tudo vale para qualquer tipo de arquivo com qualquer extensão*
+* Para adicionar um novo branch `$ git checkout -b "nome_do_branch"`
+Este comando além de criar o branch entra nele com o checkout.
 
-* Nesse caso vamos adicionar um novo arquivo para desenvolver a nossa feature `Botão`
+* Depois fazer o `$ git add .` e commit `$ git commit -m "add new files"` para as alterações feitas
 
-* Então a primeira coisa que fazemos é `git checkout -b "novo-botao"`, assim criando uma branch para ele
-Esse comando além de criar a branch já entra nela com o checkout, inclusive se olharmos agora aqui no meu VSCode, estamos dentro dela.
+* Para enviar as alterações feitas para o novo branch `$ git push origin "nome_do_branch"`
 
-* Vou então criar o arquivo, criar o `botão.md` "aqui eu crio o botão"
+Agora se olharmos para o Github, veremos que tem 2 branches, `main` e `"nome_do_branch"`
 
-* E agora fazemos o passo a passo que já sabemos, colocamos a nossa alteração em stagging com o `git add .` e commitamos com o `git commit -m "novo botão"`
+Para voltar ao branch principal `$ git checkout main` e para voltar depois ao branch `git checkout "nome_do_branch"` novamente
 
-* Para enviarmos agora que vai ser diferente. Vocês lembram que utilizávamos o `git push orgin main` né? Porém main era aquela branch principal. Agora então usaremos `git push origin botao`
-
-Agora se olharmos o nosso Github, veremos que tem 2 branches, a `main` e a `botao`
-
-<img src="https://media.discordapp.net/attachments/812313742192279612/836820670037622854/unknown.png">
-
-Vamos supor que eu ainda não tivesse terminado de desenvolver o botão, eu poderia continuar tranquilamente na branch `botao` até terminar!
-
-Mas Rafa, e se eu precisasse por algum motivo voltar naquela branch `main` e desenvolver a partir do que deixei lá? Sem problemas, a única coisa que você precisa fazer nesse caso é `git checkout main`, e pra voltar depois é só `git checkout botao` novamente
-
-Beleza! Agora desenvolvi tudo o que queria aqui na branch `botao`, como que junto ela com a main sem problemas?
+Mas e agora, como se junta o novo branch criado com o main?
 
 ## Merge
 
-* Agora o que precisamos fazer é ir para a nossa branch principal `git checkout main` e lá faremos o merge com a branch `botao` que criamos, com `git merge botao`
+Através do merge!
 
-Pronto, agora tudo o que tinha de alteração na branch `botao` juntou com a `main`
+* `$ git checkout main`
 
-* Para finalizar então, vamos jogar lá no Github isso tudo com o `git push origin main`
+* `$ git merge "nome_do_branch"`
+
+Desta forma todas as alterações feitas na branch `"nome_do_branch"` estão na `main`.
+
+* E para finalizar `git push origin main` para atualizar o respositório do Github
 
 ## Clone
 
-Como vocês podem baixar meu código?
+Como se pode fazer o download de um código?
 
-Sempre que você entrar em um repositório, seja o seu ou o de qualquer outra pessoa, terá esse botão `Code`, que quando você clica aparece um link:
+Sempre que você entrar num epositório, seja o seu ou o de qualquer outra pessoa, terá esse botão `Code`, que quando você clica aparece um link:
 
 <img src="https://media.discordapp.net/attachments/812313742192279612/836823564513705994/unknown.png">
 
