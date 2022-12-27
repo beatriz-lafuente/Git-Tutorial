@@ -97,7 +97,7 @@ Este comando além de criar o branch entra nele com o checkout.
 
 Agora se olharmos para o Github, veremos que tem 2 branches, `main` e `"nome_do_branch"`
 
-Para voltar ao branch principal `$ git checkout main` e para voltar depois ao branch `git checkout "nome_do_branch"` novamente
+Para voltar ao branch principal `$ git checkout main` e para voltar depois ao branch `$ git checkout "nome_do_branch"` novamente
 
 Mas e agora, como se junta o novo branch criado com o main?
 
@@ -109,37 +109,37 @@ Através do merge!
 
 * `$ git merge "nome_do_branch"`
 
-Desta forma todas as alterações feitas na branch `"nome_do_branch"` estão na `main`.
+Desta forma todas as alterações feitas no branch `"nome_do_branch"` estão no `main`.
 
-* E para finalizar `git push origin main` para atualizar o respositório do Github
+* E para finalizar `$ git push origin main` para atualizar o respositório do Github
 
 ## Clone
 
 Como se pode fazer o download de um código?
 
-Sempre que você entrar num epositório, seja o seu ou o de qualquer outra pessoa, terá esse botão `Code`, que quando você clica aparece um link:
+Sempre que entrar num repositório, seja o seu ou o de qualquer outra pessoa, terá o botão `Code`, que quando você clica aparece um link:
 
-<img src="https://media.discordapp.net/attachments/812313742192279612/836823564513705994/unknown.png">
+![link_github](https://user-images.githubusercontent.com/121397357/209736505-4ae96201-553b-47e3-9c58-868df0e49113.png)
 
-* Você irá copiar esse link e levar ele lá pro nosso terminal
+* O primeiro passo é copiar esse link e abrir a terminal do GitBash
 
-* O comando para puxar o projeto para a sua máquina é o `git clone https://github.com/rafaballerini/GitTutorial.git`
-
-Não é necessário criar um repositório antes disso, como fizemos anteriormente com o `git init`. Dessa vez, basta abrir o terminal e clonar o projeto e tudo aparecerá!
+* E usar o seguinte comando `$ git clone link_copiado` para puxar o repositório para a sua máquina
 
 ## Pull
 
-E se eu fizer uma alteração no repositório, como vocês podem atualizar na máquina de vocês?
+E se for feita uma alteração no repositório, como pode atualizar o repositório no seu computador?
 
-* Basta vocês executarem o comando `git pull`, ele irá puxar todas as alterações feitas no repositório do Github para o seu repositório local
+* Basta executar `$ git pull` para puxar todas as alterações feitas no repositório do Github para o seu repositório local
 
 ## Fork
 
-Mas Rafa quando eu fiz o clone do seu repositório ele não apareceu no meu Github.
-Existe a ferramenta `fork`, que é bem mais simples para fazer isso
-Você só precisa apertar nesse botão dentro do repositório e TCHANAM! Ele aparece automaticamente lá na sua conta:
+E se quiser ter o código de outro utilizador do GitHub a aparecer no seu perfil?
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/836826687634407434/unknown.png">
+O `fork` é utilizado de forma a copiar o repositório de outro utilizador do GitHub e a aparecer no seu perfil para próprio uso.
+
+* Basta clicar no botão `Fork` dentro do repositório e pronto! Ele aparece automaticamente na sua conta do GitHub:
+
+![fork](https://user-images.githubusercontent.com/121397357/209737841-713501c3-b64a-42fe-b30c-6920fc28245c.png)
 
 ## Pull request
 
@@ -170,21 +170,4 @@ Ao clicar nesse botão, você será direcionado para uma página que fará a ava
 Você irá colocar um nome intuitivo, que demonstre a funcionalidade adicionada e o ideal é que você também crie uma boa descrição do que desenvolveu, não somente explicando o que é, mas ensinando ao dono do repositório original a forma como ele poderá testar também
 
 Depois disso, basta esperar para que o dono da branch original aceite o seu pull request
-
-## Finalização
-
-Existem diversas outras funcionalidades do Git e do Github, porém tenho certeza que com tudo isso que vocês viram hoje vocês já conseguem desenvolver um projeto de uma forma bem legal
-
-Recomendo sempre vocês darem uma olhada na [documentação do Git](https://git-scm.com/doc), pois qualquer dúvida que apareça pode ser respondida por lá na explicação
-
-**Não esqueçam de deixar o like e se inscrever no [canal do Youtube](https://youtube.com/RafaellaBallerini) ❤**
-
-Até semana que vem, um beijo!
-
-
-
-
-
-
-
 
