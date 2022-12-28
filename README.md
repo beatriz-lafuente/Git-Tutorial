@@ -44,7 +44,7 @@ Foi criada uma pasta `.git` e é ali que toda a magia acontece, então não apag
 
 <img src="https://i1.wp.com/www.markus-gattol.name/misc/mm/si/content/git_git_add.png">
 
-O comando `git add` é necessário antes de darmos o commit (explicar pq)
+O comando `git add` é necessário antes de fazer o commit
 
 * `$ git commit -m "add readme.md"` para dar de facto o commit no repositório
 
