@@ -143,31 +143,29 @@ O `fork` é utilizado de forma a copiar o repositório de outro utilizador do Gi
 
 ## Pull request
 
-O último conceito que quero ensinar para vocês é o de Pull Request, vamos entender como ele funciona:
+O Pull Request funciona da seguinte forma:
 
-* Após você ter dado um fork no projeto e ele ter ido pra sua conta, você poderá alterar o projeto e adicionar as funcionalidades que deseja
+* Após ter feito `fork` num repositório e esse repositório estar disponível na conta do GitHub, é possível alterar o projeto e adicionar funcionalidades se desejar
 
-* Você pode por exemplo dar um fork no meu repositório de `Formulário` para adicionar uma validação de campos ou qualquer outra coisa que acha válido
+* Depois de feitas as alterações, e de guardar o projeto, utiliza-se os comandos `git add .`, `git commit -m "novas alterações"` e `git push origin main`
 
-* Depois disso, você poderá salvar o projeto, dar o `git add .`, `git commit -m "validação de botões"` e `git push origin main`
+Caso você deseje enviar para o dono do repositório original uma solicitação de pull, ou seja, fazer com que ele puxe as alterações que você fez no seu repositório para o repositório dele (original) deve clicar nos botões:
 
-Quando você for olhar o seu Github, verá que existe uma mensagem parecida com a seguinte:
+* `Open pull request`
+Ao clicar neste botão, será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/838990983852458035/unknown.png">
+* `Create pull request`
+Caso não tenha, bastão clicar no botão acima
 
-Isso significa que a branch do seu repositório está 1 commit "na frente" da branch original
+Boas práticas incluem pôr um nome intuitivo, que demonstre a funcionalidade adicionada e o ideal é também criar uma boa descrição do que foi desenvolvido, não somente explicar o que é, mas ensinar ao dono do repositório original a forma como ele poderá testar também.
 
-O que você deve perceber agora é esse botão que aparece em seguida:
+Depois basta esperar que o dono do branch original aceite o pull request!
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/838991711249235998/unknown.png">
+## Conclusão
 
-Ele servirá para caso você deseje enviar para o dono do repositório original uma solicitação de pull, ou seja, fazer com que ele puxe as alterações que você fez no seu repositório para o repositório dele, original
+Existem muitas outras funcionalidades do Git e do Github! 
+Espero com este tutorial ter conseguido ajudar vocês a criar um repositório Git e a utilizar o GitHub para desenvolverem os vossos projetos.
 
-Ao clicar nesse botão, você será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original. Caso não tenha, bastão clicar no botão de `Create pull request`
+Ver a documentação do Git ajuda sempre, pois qualquer dúvida que apareça pode ser respondida lá
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/838992584893399100/unknown.png">
-
-Você irá colocar um nome intuitivo, que demonstre a funcionalidade adicionada e o ideal é que você também crie uma boa descrição do que desenvolveu, não somente explicando o que é, mas ensinando ao dono do repositório original a forma como ele poderá testar também
-
-Depois disso, basta esperar para que o dono da branch original aceite o seu pull request
-
+Não se esqueçam de deixar uma estrela se gostaram e se foi útil ❤
