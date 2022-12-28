@@ -13,7 +13,7 @@ O primeiro passo é fazer a instalação do Git no seu computador através do li
 
 ## Criar um novo projeto
 
-Vou usar o meu repositório TutorialGit como exemplo para mostrar para vocês como criar um novo projeto. 
+Vou usar o meu repositório TutorialGit como exemplo para mostrar como criar um novo projeto. 
 Depois de instalar o Git o segundo passo é:
 
 * Criar uma nova pasta no seu PC com o nome `TutorialGit`
