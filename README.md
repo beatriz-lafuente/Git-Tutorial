@@ -152,10 +152,9 @@ O Pull Request funciona da seguinte forma:
 Caso você deseje enviar para o dono do repositório original uma solicitação de pull, ou seja, fazer com que ele puxe as alterações que você fez no seu repositório para o repositório dele (original) deve clicar nos botões:
 
 * `Open pull request`
-Ao clicar neste botão, será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original
+ao clicar neste botão, será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original
 
-* `Create pull request`
-Caso não tenha, bastão clicar no botão acima
+* Caso não tenha, bastão clicar no botão `Create pull request`
 
 Boas práticas incluem pôr um nome intuitivo, que demonstre a funcionalidade adicionada e o ideal é também criar uma boa descrição do que foi desenvolvido, não somente explicar o que é, mas ensinar ao dono do repositório original a forma como ele poderá testar também.
 
