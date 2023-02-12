@@ -1,7 +1,6 @@
-Olá, neste projeto irás aprender alguns comandos do Git
-# Como usar o Git e Github na prática
+Olá sejam bem vindos, este repositório ensina como utilizar o Git na prática
 
-Olá sejam bem vindos, este repositório ensina como utilizar o Git na prática.
+# Como utilizar Git e Github na prática
 
 ## Workflow
 
